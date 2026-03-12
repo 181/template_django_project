@@ -1,0 +1,11 @@
+-r base.txt
+
+# Debugging & profiling
+django-debug-toolbar
+django-extensions
+django-silk
+
+# Developer experience
+ipython
+black
+flake8
