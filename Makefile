@@ -1,7 +1,7 @@
 # Makefile for Django project with django-environ and safe port run
 
 PY ?= python3
-ENV ?= dev
+ENV ?= local
 PORT ?= 8000
 MANAGE = ENV=$(ENV) $(PY) manage.py
 
@@ -10,10 +10,10 @@ MANAGE = ENV=$(ENV) $(PY) manage.py
 help:
 	@echo "Django Makefile (multi-environment using django-environ)"
 	@echo ""
-	@echo "Usage: make <target> ENV=dev|staging|prod PORT=8000"
+	@echo "Usage: make <target> ENV=local|staging|prod PORT=8000"
 	@echo ""
 	@echo "Targets:"
-	@echo "  run            Run Django dev server (default port 8000)"
+	@echo "  run            Run Django local server (default port 8000)"
 	@echo "  runport        Run Django server safely, kill port if in use"
 	@echo "  migrate        Apply migrations"
 	@echo "  makemigrations Create migrations"
