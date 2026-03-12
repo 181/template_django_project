@@ -1,0 +1,5 @@
+Django>=6.0,<7.0
+django-environ
+psycopg2-binary
+django-redis
+djangorestframework
